@@ -1,0 +1,36 @@
+#R环境和函数
+#新工科 周震寰
+#2030010012
+multiples_of_pi<-new.env()
+multiples_of_pi[["two_pi"]]<-c(2*pi)
+multiples_of_pi$three_pi<-c(3*pi)
+assign("four_pi",4*pi,multiples_of_pi)
+ls(envir=multiples_of_pi)
+multiples_of_pi[["two_pi"]]
+multiples_of_pi[["three_pi"]]
+multiples_of_pi[["four_pi"]]
+tes1t<-function(x){if(is.finite(x)==FALSE)return(NA)
+  else{
+    if(x%%2==0)return(TRUE)
+    else{
+      return(FALSE)}
+  }
+}
+tes1t(1)
+tes1t(2)
+tes1t(0)
+tes1t(-1)
+tes1t(-2)
+tes1t(Inf)
+tes2t<-function(x){return(x)}
+tes2t(1)
+tes3t<-function(x){
+li<-list(+tes2t(x),+x)
+names(li)<-c("args","body")
+return(li)}
+tes3t(1)
+tes3t(2)
+tes3t(0)
+tes3t(-1)
+tes3t(-2)
+tes3t(Inf)
