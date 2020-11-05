@@ -34,3 +34,14 @@ tes3t(0)
 tes3t(-1)
 tes3t(-2)
 tes3t(Inf)
+#列表和数据框
+a<-list(id=c(rep(1,100)))
+l<-c(beaver2,a)
+b<-list(id=c(rep(1,114)))
+l2<-c(beaver1,b)
+
+
+mean(iris[,1])
+mean(iris[,2])
+mean(iris[,3])
+mean(iris[,4])
